@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Casa Costa &mdash; A Private Reserve, Ybor Lineage · Tampa, Florida</title>
+<meta name="description" content="Casa Costa is a private cigar house coming to Florida &mdash; a reserve of hand-rolled vitolas, a cedar-lined membership humidor, and a room built in the lineage of Ybor City's lectores." />
+<meta name="theme-color" content="#14100D" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ============================= AGE GATE ============================= -->
+<div id="age-gate" role="dialog" aria-modal="true" aria-labelledby="gate-word">
+  <div class="gate__inner">
+    <div class="crest-mount crest--gate gate__crest" data-crest="foil" aria-hidden="true"></div>
+    <h1 id="gate-word" class="gate__word">Casa Costa</h1>
+    <p class="gate__msg">You must be 21 or older to enter.</p>
+    <div class="gate__actions">
+      <button type="button" class="btn" id="gate-enter">Enter</button>
+      <button type="button" class="btn btn--ghost" id="gate-leave">Leave</button>
+    </div>
+    <p class="gate__legal">A private reserve for those of legal smoking age. Please enjoy responsibly.</p>
+  </div>
+</div>
+
+<!-- ============================= NAV ============================= -->
+<nav class="site-nav" id="site-nav" aria-label="Primary">
+  <a class="brand" href="#home" data-view="home" data-nav-role="brand">
+    <span class="crest-mount crest--nav" data-crest="foil" aria-hidden="true"></span>
+    <span class="brand__word">Casa Costa</span>
+  </a>
+  <ul class="nav-links">
+    <li><a class="nav-link" href="#home" data-view="home">Home</a></li>
+    <li><a class="nav-link" href="#house" data-view="house">The House</a></li>
+    <li><a class="nav-link" href="#reserve" data-view="reserve">The Reserve</a></li>
+    <li><a class="nav-link" href="#pairings" data-view="pairings">Pairings</a></li>
+    <li><a class="nav-link" href="#heritage" data-view="heritage">Heritage</a></li>
+    <li><a class="nav-link" href="#membership" data-view="membership">Membership</a></li>
+    <li><a class="nav-link" href="#visit" data-view="visit">Visit</a></li>
+  </ul>
+  <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+</nav>
+
+<!-- Mobile full-screen nav (not a drawer) -->
+<div class="mobile-nav" id="mobile-nav">
+  <button type="button" class="mobile-nav__close" id="mobile-nav-close">Close</button>
+  <div class="crest-mount crest--nav" data-crest="foil" aria-hidden="true" style="width:44px;height:44px;"></div>
+  <a class="nav-link" href="#home" data-view="home">Home</a>
+  <a class="nav-link" href="#house" data-view="house">The House</a>
+  <a class="nav-link" href="#reserve" data-view="reserve">The Reserve</a>
+  <a class="nav-link" href="#pairings" data-view="pairings">Pairings</a>
+  <a class="nav-link" href="#heritage" data-view="heritage">Heritage</a>
+  <a class="nav-link" href="#membership" data-view="membership">Membership</a>
+  <a class="nav-link" href="#visit" data-view="visit">Visit</a>
+</div>
+
+<main id="main-content">
+
+  <!-- ============================= HOME ============================= -->
+  <section class="view" id="view-home" aria-label="Home">
+    <div class="view-inner">
+      <div class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <img src="assets/hero.jpg" alt="" loading="eager" onerror="this.remove()" />
+        </div>
+        <div class="hero__content">
+          <div class="crest-mount crest--hero hero__crest" data-crest="foil" aria-hidden="true"></div>
+          <h1 class="hero__word">Casa Costa</h1>
+          <p class="hero__tagline">An hour, unhurried.</p>
+          <p class="hero__sub">Pull up a chair &mdash; someone always has a story.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#visit" data-view="visit">Reserve Your Chair</a>
+          </div>
+        </div>
+        <div class="hero__scrollcue" aria-hidden="true"><span></span>Enter</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= THE HOUSE ============================= -->
+  <section class="view" id="view-house" aria-label="The House">
+    <div class="view-inner view-inner--narrow">
+      <header class="section-head reveal">
+        <div class="eyebrow"><span class="crest-mount crest--eyebrow" data-crest="flat" aria-hidden="true"></span>The Vision</div>
+        <h2>The House We're Building</h2>
+        <p class="lede">Not a smoke shop. Not a bar with a humidor bolted on. A room built the way the best rooms always have been &mdash; around the hour, not the clock.</p>
+      </header>
+
+      <p class="reveal">Picture leather worn soft by other men's evenings, low brass light that never asks you to see the time, and a cedar-lined room at the back where the air itself smells like patience. Casa Costa is being built in Florida on that one idea: that a great cigar deserves a great room to be smoked in, and a great room deserves people who are in no rush to leave it.</p>
+
+      <div class="img-slot img-slot--band reveal">
+        <img src="assets/leather-chair.jpg" alt="A worn leather club chair beside a brass cigar cutter and lighter, low candlelight." loading="lazy" onerror="this.parentElement.querySelector('img').remove()" />
+      </div>
+
+      <p class="reveal">There will be a bar, but it will not perform for you. There will be a humidor, but it will not be a display case &mdash; it will be a working room, kept at the temperature and humidity a serious blend actually needs. There will be chairs arranged for conversation, not for photographs.</p>
+
+      <p class="pull-quote reveal">Some rooms are built to impress. <span>This one is being built to be lived in.</span></p>
+
+      <p class="reveal">Casa Costa isn't open yet. It's still a floor plan, a wine-dark paint chip, a stack of research on wrapper leaf and relative humidity, and a promise to a city with more cigar history than almost anywhere else in the country. What follows is the dream in full &mdash; the reserve, the pairings, the lineage it's built on, and the room itself, waiting for its first light.</p>
+    </div>
+  </section>
+
+  <!-- ============================= THE RESERVE ============================= -->
+  <section class="view" id="view-reserve" aria-label="The Reserve">
+    <div class="view-inner">
+      <header class="section-head reveal">
+        <div class="eyebrow"><span class="crest-mount crest--eyebrow" data-crest="flat" aria-hidden="true"></span>The Reserve</div>
+        <h2>What We Keep in the Cedar</h2>
+        <p class="lede">Long-filler, hand-rolled, and nothing shortcut. A well-made cigar tells you before you ever light it.</p>
+      </header>
+
+      <p class="reveal">A good roll gives a little under the thumb without going soft. The draw should feel like pulling a milkshake through a straw &mdash; resistance, not struggle. Light it evenly and a well-constructed cigar repays you with a firm, pale-grey ash that holds its own shape. That is the standard the Reserve is built on: a torcedor's hands, whole leaves, no shortcuts in the filler.</p>
+
+      <div class="callout reveal">
+        <span class="callout__label">A Note on Puro</span>
+        <p>When every leaf in a cigar &mdash; wrapper, binder, and filler &mdash; comes from a single country, it's called a <em>puro</em>. No blending across borders. It's the purest expression of one piece of ground, and the Reserve keeps a rotating selection of them for exactly that reason.</p>
+      </div>
+
+      <h3 class="subhead reveal">The Vitolas</h3>
+      <p class="reveal" style="color:var(--cream);">Vitola is the correct word for a cigar's size and shape &mdash; never "type." Ring gauge is measured in sixty-fourths of an inch: fatter rings smoke slower and cooler with more room for a blend to unfold; thinner rings run faster and lead with the wrapper.</p>
+      <div class="entry-list reveal">
+        <div class="entry-row">
+          <div class="entry-row__name">Corona</div>
+          <div class="entry-row__meta">5.5&Prime; &times; 42&ndash;44</div>
+          <div class="entry-row__desc">The benchmark parejo. The size every other size is quietly measured against &mdash; balanced, unhurried, built for an actual hour.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Robusto</div>
+          <div class="entry-row__meta">5&Prime; &times; 50&ndash;54</div>
+          <div class="entry-row__desc">Short and thick. Faster into full flavor, dense smoke, the working man's classic reimagined as an American favorite.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Toro</div>
+          <div class="entry-row__meta">6&Prime; &times; 50&ndash;54</div>
+          <div class="entry-row__desc">The most poured size in the country for a reason &mdash; a full ring gauge with enough length to actually finish an evening.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Churchill</div>
+          <div class="entry-row__meta">7&Prime; &times; 47&ndash;50</div>
+          <div class="entry-row__desc">Named for the man who never seemed to be seen without one. A long, generous smoke for a long, generous conversation.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Lancero</div>
+          <div class="entry-row__meta">7&Prime;+ &times; 38&ndash;40</div>
+          <div class="entry-row__desc">Thin and long &mdash; the purest test of a blend there is. Master rollers make these first, to prove what a leaf can do.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Torpedo / Belicoso</div>
+          <div class="entry-row__meta">6&ndash;6.5&Prime; &times; 52</div>
+          <div class="entry-row__desc">A tapered head that concentrates smoke and flavor to a point. Houses draw the line between the two differently &mdash; ask your roller which they mean.</div>
+        </div>
+      </div>
+
+      <h3 class="subhead reveal">The Wrappers</h3>
+      <div class="entry-list reveal">
+        <div class="entry-row">
+          <div class="entry-row__name">Connecticut Shade</div>
+          <div class="entry-row__meta">Mild</div>
+          <div class="entry-row__desc">Grown under cheesecloth tents for a pale, silky leaf. Creamy, nutty, a whisper of cedar &mdash; the easiest morning smoke in the house.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Maduro</div>
+          <div class="entry-row__meta">Process, not plant</div>
+          <div class="entry-row__desc">Extended fermentation turns any leaf dark &mdash; cocoa, coffee, molasses. Dark does not mean strong; strength lives in the filler underneath, not the wrapper's color.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Habano</div>
+          <div class="entry-row__meta">Spiced</div>
+          <div class="entry-row__desc">Leather, earth, black pepper on the finish. A wrapper with some teeth to it, without tipping into harsh.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Corojo</div>
+          <div class="entry-row__meta">Peppery</div>
+          <div class="entry-row__desc">A sharper, spicier kick than Habano &mdash; a wrapper that announces itself early and holds the line all the way down.</div>
+        </div>
+      </div>
+
+      <div class="img-slot img-slot--band reveal">
+        <img src="assets/tobacco-leaves.jpg" alt="Rows of tobacco leaves hanging to cure in a wood curing barn." loading="lazy" onerror="this.parentElement.querySelector('img').remove()" />
+      </div>
+
+      <h3 class="subhead reveal">The Ground</h3>
+      <div class="entry-list reveal">
+        <div class="entry-row">
+          <div class="entry-row__name">Vuelta Abajo</div>
+          <div class="entry-row__meta">Cuba</div>
+          <div class="entry-row__desc">The benchmark region against which every other tobacco-growing valley in the world is still quietly compared.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Estel&iacute;</div>
+          <div class="entry-row__meta">Nicaragua</div>
+          <div class="entry-row__desc">Volcanic soil produces full-bodied, spicier leaf &mdash; the backbone of most serious Nicaraguan blends.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Jalapa</div>
+          <div class="entry-row__meta">Nicaragua</div>
+          <div class="entry-row__desc">Red clay gives a smoother, creamier, sweeter leaf &mdash; the counterweight to Estel&iacute;'s intensity.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PAIRINGS ============================= -->
+  <section class="view" id="view-pairings" aria-label="Pairings">
+    <div class="view-inner">
+      <header class="section-head reveal">
+        <div class="eyebrow"><span class="crest-mount crest--eyebrow" data-crest="flat" aria-hidden="true"></span>Pairings</div>
+        <h2>What's in the Glass</h2>
+        <p class="lede">The logic isn't flavor-matching &mdash; it's weight-matching. Pair the body of the pour to the body of the smoke, and let the two argue a little.</p>
+      </header>
+
+      <div class="img-slot img-slot--tall reveal">
+        <img src="assets/pour.jpg" alt="Bourbon poured over a large ice sphere in a heavy tumbler, warm low light." loading="lazy" onerror="this.parentElement.querySelector('img').remove()" />
+      </div>
+
+      <div class="entry-list reveal mt-lg">
+        <div class="entry-row">
+          <div class="entry-row__name">Bourbon</div>
+          <div class="entry-row__meta">The Universal</div>
+          <div class="entry-row__desc">Vanilla, caramel, oak. If you don't know what a cigar wants, hand it a pour of bourbon &mdash; it almost never argues.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Rye</div>
+          <div class="entry-row__meta">Sharper</div>
+          <div class="entry-row__desc">More bite, more spice. Built for a peppery Corojo or Habano wrapper that isn't looking for a gentle partner.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Islay Scotch</div>
+          <div class="entry-row__meta">Peat &amp; Smoke</div>
+          <div class="entry-row__desc">Laphroaig, Lagavulin &mdash; reserve these for a full, earthy cigar that can stand up to a genuinely smoky pour without disappearing.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Aged Rum</div>
+          <div class="entry-row__meta">Caribbean Kin</div>
+          <div class="entry-row__desc">Versatile and forgiving, echoing the same molasses sweetness a good maduro already carries. Shared heritage, shared table.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Cognac</div>
+          <div class="entry-row__meta">Elegant</div>
+          <div class="entry-row__desc">Dried fruit and oak in a lighter register &mdash; built for a medium-bodied cigar you actually want to taste, not fight through.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Espresso</div>
+          <div class="entry-row__meta">Morning House</div>
+          <div class="entry-row__desc">A Connecticut-wrapped smoke and a short, dark pour is the closest thing the Reserve has to a daytime ritual.</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-row__name">Port</div>
+          <div class="entry-row__meta">After Dinner</div>
+          <div class="entry-row__desc">Sweet, heavy, unhurried &mdash; poured last, alongside a maduro or oscuro, when the evening has already decided to run long.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= HERITAGE ============================= -->
+  <section class="view" id="view-heritage" aria-label="Heritage">
+    <div class="view-inner view-inner--narrow">
+      <header class="section-head reveal">
+        <div class="eyebrow"><span class="crest-mount crest--eyebrow" data-crest="flat" aria-hidden="true"></span>Heritage</div>
+        <h2>The Lector's Chair</h2>
+        <p class="lede">Before Casa Costa, there was Ybor City &mdash; and before Ybor City decided what a cigar house could be, there was a chair no one was allowed to sit in.</p>
+      </header>
+
+      <p class="reveal">In the 1880s, Vicente Mart&iacute;nez Ybor moved his cigar operation from Key West and Havana to a stretch of scrubland outside Tampa. Cuban, Spanish, and Italian immigrants followed the work, and within a few decades the neighborhood that took his name had become something the rest of the country hadn't seen before: by the 1920s, more than two hundred factories and roughly twelve thousand workers were hand-rolling something like half a billion cigars a year. Tampa didn't ask to be called the Cigar Capital of the World. It just was one.</p>
+
+      <div class="img-slot img-slot--band reveal">
+        <img src="assets/ybor.jpg" alt="A red-brick Ybor City cigar factory at dusk, wrought iron balconies, cobblestone street." loading="lazy" onerror="this.parentElement.querySelector('img').remove()" />
+      </div>
+
+      <p class="reveal">Here is the part that should give you chills. The rollers on those factory floors &mdash; men and women doing exacting, repetitive work for ten or twelve hours a day &mdash; pooled their own wages to hire someone whose only job was to read to them. He sat above the floor on a raised platform called <em>la tribuna</em>, and from open to close he read the news, political tracts, and serialized novels the workers themselves had voted on. No one there needed to be taught to love a story. They built a chair for it.</p>
+
+      <p class="reveal">The lectores held real cultural authority &mdash; enough that in 1931, factory owners, spooked by the role they'd played organizing strikes, banned them outright. Radio filled the silence not long after. But the idea the lector left behind never really left the leaf: a cigar house, at its best, has never just been about the smoke. It's a room built for gathering. For voice. For somebody always having a story worth stopping to hear.</p>
+
+      <p class="pull-quote reveal">Pull up a chair. <span>Someone always has a story.</span></p>
+
+      <p class="reveal">This ground never really stopped being cigar ground. Oliva &mdash; still one of the most respected names in the business &mdash; began rolling in Tampa in 1934, a few miles from where the lectores once read. Casa Costa doesn't claim to be the first chair in that room. Only that it remembers whose room it was, and intends to keep the tradition of the reader &mdash; the gathering, the story, the hour nobody rushes &mdash; very much alive.</p>
+    </div>
+  </section>
+
+  <!-- ============================= MEMBERSHIP ============================= -->
+  <section class="view" id="view-membership" aria-label="Membership">
+    <div class="view-inner view-inner--narrow">
+      <header class="section-head reveal">
+        <div class="eyebrow"><span class="crest-mount crest--eyebrow" data-crest="flat" aria-hidden="true"></span>Membership</div>
+        <h2>A Room, By Invitation</h2>
+        <p class="lede">Casa Costa will not be a walk-in humidor. It will be a small number of Spanish-cedar lockers, held under your name, in a room kept the way a serious collection deserves to be kept.</p>
+      </header>
+
+      <div class="img-slot img-slot--tall reveal">
+        <img src="assets/humidor.jpg" alt="Interior of a Spanish-cedar-lined humidor room, rows of private lockers." loading="lazy" onerror="this.parentElement.querySelector('img').remove()" />
+      </div>
+
+      <div class="membership-grid mt-lg">
+        <div class="membership-item reveal">
+          <h3>Your Locker</h3>
+          <p>A private drawer lined in Spanish cedar, aromatic oils and all, held under your name in the house humidor &mdash; not a shelf, not a shared bin.</p>
+        </div>
+        <div class="membership-item reveal">
+          <h3>69&ndash;72% RH</h3>
+          <p>The house target, held year-round. Not a rough estimate &mdash; the actual range a serious collection needs to age the way it's supposed to.</p>
+        </div>
+        <div class="membership-item reveal">
+          <h3>Plume, Not Mold</h3>
+          <p>A well-aged cigar sometimes develops <em>plume</em> &mdash; a flat, dry, crystalline dusting of oils that wipes clean. It's a good sign, not a bad one. Mold is fuzzy, raised, and never welcome. Know the difference before you panic.</p>
+        </div>
+        <div class="membership-item reveal">
+          <h3>Past the Sick Period</h3>
+          <p>Freshly rolled cigars carry a harsh, ammonia-heavy edge for the first three to twelve months. Serious houses rest their inventory past it &mdash; the same patience you'd extend a good bottle of wine.</p>
+        </div>
+      </div>
+
+      <p class="reveal center" style="margin-top:56px;">Membership will be extended by invitation, in small numbers, as the room comes together. If you'd like to be considered, request an evening.</p>
+      <div class="center reveal" style="margin-top:28px;">
+        <a class="btn" href="#visit" data-view="visit">Request an Evening</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= VISIT ============================= -->
+  <section class="view" id="view-visit" aria-label="Visit">
+    <div class="view-inner view-inner--narrow">
+      <header class="section-head reveal">
+        <div class="eyebrow"><span class="crest-mount crest--eyebrow" data-crest="flat" aria-hidden="true"></span>Visit</div>
+        <h2>Opening in Florida</h2>
+        <p class="lede">Casa Costa is coming to Tampa &mdash; the one American city that never needed to be convinced a cigar could be a way of life. Coming soon.</p>
+      </header>
+
+      <div class="img-slot img-slot--band reveal">
+        <img src="assets/service.jpg" alt="A gloved hand presenting a cigar box to a seated guest in a dim, warmly lit room." loading="lazy" onerror="this.parentElement.querySelector('img').remove()" />
+      </div>
+
+      <p class="reveal center">No address yet. No open date yet. Just a floor plan, a growing reserve list, and a city with the right history to build it in. If Casa Costa is the kind of room you'd want a chair in, we'd like to know.</p>
+
+      <div class="inquiry reveal" id="inquiry-block">
+        <div class="inquiry__row">
+          <span class="inquiry__label">Name</span>
+          <span class="inquiry__value">&mdash;</span>
+        </div>
+        <div class="inquiry__row">
+          <span class="inquiry__label">Preferred Evening</span>
+          <span class="inquiry__value">&mdash;</span>
+        </div>
+        <div class="inquiry__row">
+          <span class="inquiry__label">Notes</span>
+          <span class="inquiry__value">&mdash;</span>
+        </div>
+        <div class="inquiry__cta">
+          <button type="button" class="btn" id="inquiry-btn">Request an Evening</button>
+          <p class="inquiry__note" id="inquiry-note" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="crest-mount crest--footer site-footer__crest" data-crest="flat" aria-hidden="true"></div>
+      <div class="site-footer__word">Casa Costa</div>
+      <div class="site-footer__line">Est. Ybor Lineage &middot; Tampa, Florida</div>
+      <div class="site-footer__legal">&copy; 2026 Casa Costa. A concept, still becoming a room.</div>
+    </footer>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
