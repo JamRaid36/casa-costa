@@ -32,11 +32,18 @@
 7. **Membership / The Room** — high-end members'-club angle
 8. **Visit** — Florida, "coming soon"
 
-## Status
+## Status (updated 2026-07-04 ~06:45)
 
-- ✅ Brief locked, project scaffolded, brand direction set.
-- 🔄 2 Sonnet research agents running (connoisseur knowledge base + design language/Ideogram prompts).
-- ⬜ Next: on research return → generate Ideogram imagery → dish build to Sonnet agents → Fable design review → present to Jason.
+- ✅ Brief locked, brand set, both research briefs done (DESIGN_BRIEF.md + CONTENT_BRIEF.md).
+- ✅ **First build shipped** (Sonnet builder + Fable design review). Files: index.html, styles.css, app.js, assets/favicon.svg. Committed 9750074.
+  - 7 views (Home/House/Reserve/Pairings/Heritage/Membership/Visit) as a crossfade SPA router, hash-routed, real back/forward. Age gate (localStorage `casaCostaAgeVerified`). Inline-SVG cigar-band crest — **arc geometry bug fixed** (was clipping to "ASA COST", now clean CASA COSTA). Authentic copy throughout; Heritage = "The Lector's Chair" (El Lector story). Responsive + reduced-motion + a11y.
+  - Reviewed via headless-chromium screenshots in _review/ (gitignored). Home/Reserve/Heritage all verified premium.
+- 🔲 **BLOCKED on Jason:** Ideogram OAuth not yet authorized → the 8 photo slots (hero.jpg, cigar-foot, humidor, tobacco-leaves, pour, leather-chair, ybor, service under assets/) show graceful gradient fallbacks. Site looks intentional without them but the hero wants the real photo. Auth URL sent to Jason 2026-07-04.
+
+## What's next
+1. Jason authorizes Ideogram → generate the 8 images (prompts in DESIGN_BRIEF.md / research output) → drop into assets/ → re-review.
+2. Full-page review of remaining views (House, Membership, Visit, Pairings full scroll) — spot-checked, not exhaustively screenshotted.
+3. Jason's calls: name (Casa Costa?), any personal Costa dedication, then polish + decide hosting.
 
 ## Open questions for Jason
 - Name: "Casa Costa" ok, or swap? (trivial to change)
