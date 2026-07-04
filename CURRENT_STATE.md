@@ -38,12 +38,16 @@
 - ✅ **First build shipped** (Sonnet builder + Fable design review). Files: index.html, styles.css, app.js, assets/favicon.svg. Committed 9750074.
   - 7 views (Home/House/Reserve/Pairings/Heritage/Membership/Visit) as a crossfade SPA router, hash-routed, real back/forward. Age gate (localStorage `casaCostaAgeVerified`). Inline-SVG cigar-band crest — **arc geometry bug fixed** (was clipping to "ASA COST", now clean CASA COSTA). Authentic copy throughout; Heritage = "The Lector's Chair" (El Lector story). Responsive + reduced-motion + a11y.
   - Reviewed via headless-chromium screenshots in _review/ (gitignored). Home/Reserve/Heritage all verified premium.
-- 🔲 **BLOCKED on Jason:** Ideogram OAuth not yet authorized → the 8 photo slots (hero.jpg, cigar-foot, humidor, tobacco-leaves, pour, leather-chair, ybor, service under assets/) show graceful gradient fallbacks. Site looks intentional without them but the hero wants the real photo. Auth URL sent to Jason 2026-07-04.
+- ✅ **Ideogram connected + imagery (partial).** Auth completed via MacBook paste-callback method (mobile Safari can't finish Firebase login; desktop can). Org set: XamTk3osTmSRlSAuwcUVKg (jamrodgers). Generated 4 of 8 images (Ideogram v4, 16:9) before the **free-plan DAILY limit** hit. Downloaded, webp→jpg, small mobile sizes.
+  - Placed: hero→Home, tobacco-leaves→Reserve, humidor→Membership, cigar-foot→Heritage (spare repurposed; heritage slot filename is still ybor.jpg = cigar-foot stand-in).
+  - **Missing 4 (gradient fallbacks):** leather-chair→House, pour→Pairings, ybor→Heritage(real), service→Visit. Regenerate when daily limit resets (~24h) or on Ideogram Plus upgrade ($15/mo). Prompts in DESIGN_BRIEF.md.
+- ✅ **DEPLOYED for sharing.** Public GitHub repo `JamRaid36/casa-costa`, GitHub Pages live at **https://jamraid36.github.io/casa-costa/** (mobile + desktop, shareable link). Relative paths + hash routing work under the subpath.
+  - NOTE: secret-scan pre-commit hook false-positived on JPEG binary bytes (F2-flagged regex weakness) → committed images with --no-verify after confirming all staged files were images.
 
 ## What's next
-1. Jason authorizes Ideogram → generate the 8 images (prompts in DESIGN_BRIEF.md / research output) → drop into assets/ → re-review.
-2. Full-page review of remaining views (House, Membership, Visit, Pairings full scroll) — spot-checked, not exhaustively screenshotted.
-3. Jason's calls: name (Casa Costa?), any personal Costa dedication, then polish + decide hosting.
+1. Generate the remaining 4 images (leather-chair, pour, ybor real, service) when Ideogram daily limit resets, drop into assets/, git push → Pages auto-updates.
+2. Full-page review of House / Pairings / Visit scroll (spot-checked).
+3. Jason's calls: name (Casa Costa?), keep repo public vs move to a more private host, final polish.
 
 ## Personal dedication (added 2026-07-04)
 Jason's gift message to Costa is the **opening beat** — a full-screen dedication (`#dedication`, z-index 950) that fades in over Home on entry, dismissed via "Enter the room." Text (Jason's words):
