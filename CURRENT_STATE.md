@@ -8,7 +8,7 @@
 
 - **Purpose:** A gift/blessing for Costa. Pure concept of his dream cigar bar. Not real yet.
 - **Function:** Static/showcase only. But must *feel* like a true website — real navigation, multiple pages/sections you click through. Functionality can be added later if it ever becomes real.
-- **Setting:** Florida (Costa is moving there). Lean HARD into the authentic hook: **Ybor City / Tampa — the historic cigar capital of America** (Cuban/Spanish immigrant rollers, "Cigar City," the lector tradition).
+- **Setting:** The house is in **Gainesville, Florida** (where Costa is moving — confirmed 2026-07-04). Gainesville has no cigar heritage of its own, so the play is: **Ybor City / Tampa is invoked as Florida's cigar LINEAGE** (inherited, not "we're located there") — Cuban/Spanish immigrant rollers, "Cigar City," the lector tradition. Crest/title/Visit/footer all say Gainesville; Heritage page tells the Ybor story as the lineage Casa Costa carries forward. Oliva-began-in-Tampa-1934 stays (real heritage fact, not a location claim).
 - **Audience/depth:** Serious **connoisseurs** ("cigar nerds"). Content must be factually authentic — real vitolas, wrappers, pairings, ritual. Neither Jason nor Leo knows cigars, so research carries the authenticity.
 - **Imagery:** No real photos. All **AI-generated via Ideogram**. Cohesive warm/cinematic/low-light luxury look.
 - **Build approach:** Hand-built HTML/CSS/JS + Ideogram imagery. **Dished to Sonnet subagents to save token cost; Fable (Leo) sets creative direction + does final design review only.**

@@ -49,7 +49,7 @@
           'fill="' + (isFoil ? fill : "none") + '" stroke="' + stroke + '" stroke-width="' + (isFoil ? 0 : 1.4) + '"/>' +
         '<line x1="76" y1="167" x2="164" y2="167" stroke="' + stroke + '" stroke-width="1"/>' +
         '<text x="120" y="181" font-family="EB Garamond, serif" font-size="8" letter-spacing="2.2" text-anchor="middle" fill="' + fill + '">EST. YBOR LINEAGE</text>' +
-        '<text x="120" y="193" font-family="EB Garamond, serif" font-size="8" letter-spacing="2.2" text-anchor="middle" fill="' + fill + '">TAMPA, FLORIDA</text>' +
+        '<text x="120" y="193" font-family="EB Garamond, serif" font-size="7.5" letter-spacing="1.2" text-anchor="middle" fill="' + fill + '">GAINESVILLE, FLORIDA</text>' +
       "</svg>"
     );
   }
