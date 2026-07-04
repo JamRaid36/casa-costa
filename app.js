@@ -197,7 +197,50 @@
     booted = true;
     mountCrests();
     bindScrollShadows();
-    showView(getViewFromHash(), { updateHash: false });
+    var startView = getViewFromHash();
+    showView(startView, { updateHash: false });
+    if (startView === DEFAULT_VIEW) showDedication();
+  }
+
+  /* ---------------------------------------------------------------------
+     Dedication — the opening beat. Fades in over the home view on entry,
+     dismissed by the reader. Only appears when landing on home.
+     --------------------------------------------------------------------- */
+  var dedication = document.getElementById("dedication");
+  var dedEnter = document.getElementById("ded-enter");
+  var dedDismissed = false;
+
+  function dismissDedication() {
+    if (!dedication || dedDismissed) return;
+    dedDismissed = true;
+    dedication.classList.remove("visible");
+    dedication.classList.add("dismissing");
+    if (mainEl && "inert" in mainEl) mainEl.inert = false;
+    if (siteNav && "inert" in siteNav) siteNav.inert = false;
+    window.setTimeout(function () {
+      dedication.setAttribute("hidden", "hidden");
+    }, prefersReduced ? 0 : 1500);
+  }
+
+  function showDedication() {
+    if (!dedication) return;
+    dedication.removeAttribute("hidden");
+    if (mainEl && "inert" in mainEl) mainEl.inert = true;
+    if (siteNav && "inert" in siteNav) siteNav.inert = true;
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(function () {
+        dedication.classList.add("visible");
+      });
+    });
+    if (dedEnter) dedEnter.addEventListener("click", dismissDedication);
+    dedication.addEventListener("click", function (e) {
+      if (e.target === dedication) dismissDedication();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (!dedDismissed && (e.key === "Escape" || e.key === "Enter" || e.key === " ")) {
+        dismissDedication();
+      }
+    });
   }
 
   function resolveGate() {

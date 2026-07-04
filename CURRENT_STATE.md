@@ -45,6 +45,11 @@
 2. Full-page review of remaining views (House, Membership, Visit, Pairings full scroll) — spot-checked, not exhaustively screenshotted.
 3. Jason's calls: name (Casa Costa?), any personal Costa dedication, then polish + decide hosting.
 
+## Personal dedication (added 2026-07-04)
+Jason's gift message to Costa is the **opening beat** — a full-screen dedication (`#dedication`, z-index 950) that fades in over Home on entry, dismissed via "Enter the room." Text (Jason's words):
+> To my dear friend — of all the dreamers, I believe in yours, and I wish them all into existence. The world needs more dreamers like you. — Jason
+Signed "— Jason". Reduced-motion safe, keyboard-dismissible.
+
 ## Open questions for Jason
 - Name: "Casa Costa" ok, or swap? (trivial to change)
-- Any personal touches to weave in for Costa (his story, a dedication)?
+- Ideogram auth failing on his phone (localhost redirect) — needs the paste-the-callback-URL workaround, or authorize from the Mac Mini browser. BLOCKS imagery generation.

@@ -461,3 +461,56 @@ ul { list-style: none; margin: 0; padding: 0; }
 /* ---------- utility ---------- */
 .center { text-align: center; }
 .mt-lg { margin-top: 64px; }
+
+/* ===================== Dedication — opening beat ===================== */
+#dedication {
+  position: fixed; inset: 0; z-index: 950;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 28px;
+  background:
+    radial-gradient(120% 90% at 50% 42%, rgba(58,43,31,0.55) 0%, rgba(20,16,13,0.98) 60%),
+    var(--char-oak);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 1.5s var(--ease), visibility 1.5s var(--ease);
+}
+#dedication.visible { opacity: 1; visibility: visible; pointer-events: auto; }
+#dedication.dismissing { opacity: 0; }
+#dedication[hidden] { display: none; }
+.ded__inner {
+  max-width: 600px; text-align: center;
+  transform: translateY(14px);
+  transition: transform 1.8s var(--ease);
+}
+#dedication.visible .ded__inner { transform: translateY(0); }
+.ded__crest { width: 74px; height: 74px; margin: 0 auto 34px; opacity: 0.92; }
+.ded__eyebrow {
+  font-family: "Cinzel", serif; font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.36em; text-transform: uppercase;
+  color: var(--brass); margin-bottom: 30px;
+}
+.ded__body {
+  font-family: "EB Garamond", serif; font-style: italic; font-weight: 500;
+  font-size: clamp(1.35rem, 2.5vw, 1.95rem); line-height: 1.85;
+  color: var(--parchment); margin: 0;
+}
+.ded__sign {
+  font-family: "EB Garamond", serif; font-style: italic;
+  font-size: 1.05rem; color: var(--cream); margin: 32px 0 0;
+}
+.ded__enter {
+  margin-top: 52px; background: none; border: 0; cursor: pointer;
+  font-family: "Cinzel", serif; font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--brass); opacity: 0.82;
+  transition: color var(--dur) var(--ease), opacity var(--dur) var(--ease);
+  padding: 10px 4px;
+}
+.ded__enter::after {
+  content: ""; display: block; width: 1px; height: 26px;
+  background: var(--brass); opacity: 0.5; margin: 16px auto 0;
+}
+.ded__enter:hover, .ded__enter:focus-visible { color: var(--cognac); opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  #dedication, .ded__inner { transition: opacity 0.001s, visibility 0.001s; }
+  .ded__inner { transform: none; }
+}
